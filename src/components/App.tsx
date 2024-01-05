@@ -76,7 +76,9 @@ function App() {
         </div>
       </form>
 
-      <QrCode {...stateForm} />
+      <div className="flex justify-center">
+        <QrCode {...stateForm} />
+      </div>
     </div>
   )
 }
