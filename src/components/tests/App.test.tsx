@@ -23,6 +23,6 @@ describe('App Component', () => {
 
     expect(ssidInput.value).toBe('')
     expect(passwordInput.value).toBe('')
-    expect(securityTypeSelect.value).toBe('WPA')
+    expect(securityTypeSelect.value).toBe('')
   })
 })

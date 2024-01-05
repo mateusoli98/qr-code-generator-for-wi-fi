@@ -60,6 +60,7 @@ function App() {
             name="securityType"
             onChange={handleChangeForm}
           >
+            <option value="" className="text-black"></option>
             <option value="WPA" className="text-black">
               WPA
             </option>
