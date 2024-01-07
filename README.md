@@ -1,10 +1,8 @@
 # QR Code Generator for Wi-Fi
 
-Access the project directory.
+Access the project [demo](https://qrcodegeneratorforwifi.netlify.app/).
 
 ![image](https://github.com/mateusoli98/qr-code-generator-for-wi-fi/assets/39521693/45f7173f-5c1c-4440-9d9a-8a7a44deeda5)
-
-
 
 ```bash
 cd qr-code-generator-for-wi-fi
@@ -43,4 +41,3 @@ npm run build
 ```bash
 npm run test
 ```
-
