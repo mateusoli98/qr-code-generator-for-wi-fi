@@ -28,7 +28,8 @@
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "tailwindcss"],
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
+    "prettier/prettier": 0,
+    "semi": ["error", "always"],
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",

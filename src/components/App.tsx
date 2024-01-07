@@ -1,13 +1,13 @@
-import { ChangeEvent, useState } from 'react'
-import { WiFiCredencialsModel } from 'model/WiFiCredencialsModel'
-import QrCode from './QrCode'
+import { ChangeEvent, useState } from 'react';
+import { WiFiCredencialsModel } from 'model/WiFiCredencialsModel';
+import QrCode from './QrCode';
 
 function App() {
   const [stateForm, setStateForm] = useState<WiFiCredencialsModel>({
     ssid: '',
     password: '',
     securityType: ''
-  })
+  });
 
   const handleChangeForm = (
     event: ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -15,34 +15,34 @@ function App() {
     setStateForm((state) => ({
       ...state,
       [event.target.name]: event.target.value
-    }))
-  }
+    }));
+  };
 
   return (
-    <div className="max-w-md mx-auto mt-16">
-      <h2 className="text-2xl font-bold mb-4">Gerador de QR Code para Wi-Fi</h2>
+    <div className="mx-auto mt-16 max-w-md">
+      <h2 className="mb-4 text-2xl font-bold">Gerador de QR Code para Wi-Fi</h2>
       <form className="space-y-4">
         <div>
-          <label htmlFor="ssid" className="block mb-1">
+          <label htmlFor="ssid" className="mb-1 block">
             SSID da Rede:
           </label>
           <input
             type="text"
             id="ssid"
-            className="w-full border rounded-md px-3 py-2"
+            className="w-full rounded-md border px-3 py-2"
             value={stateForm.ssid}
             name="ssid"
             onChange={handleChangeForm}
           />
         </div>
         <div>
-          <label htmlFor="password" className="block mb-1">
+          <label htmlFor="password" className="mb-1 block">
             Senha:
           </label>
           <input
             type="password"
             id="password"
-            className="w-full border rounded-md px-3 py-2"
+            className="w-full rounded-md border px-3 py-2"
             value={stateForm.password}
             name="password"
             onChange={handleChangeForm}
@@ -50,12 +50,12 @@ function App() {
         </div>
 
         <div>
-          <label htmlFor="securityType" className="block mb-1">
+          <label htmlFor="securityType" className="mb-1 block">
             Tipo de Segurança:
           </label>
           <select
             id="securityType"
-            className="w-full border rounded-md px-3 py-2"
+            className="w-full rounded-md border px-3 py-2"
             value={stateForm.securityType}
             name="securityType"
             onChange={handleChangeForm}
@@ -81,7 +81,7 @@ function App() {
         <QrCode {...stateForm} />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
