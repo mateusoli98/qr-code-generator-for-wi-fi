@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="mx-auto mt-16 max-w-md">
+    <div className="mx-auto mt-16 max-w-xs">
       <h2 className="mb-4 text-2xl font-bold">Gerador de QR Code para Wi-Fi</h2>
       <form className="space-y-4">
         <div>
